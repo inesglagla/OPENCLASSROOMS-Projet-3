@@ -1,0 +1,144 @@
+/*Configurations de départ*/
+
+* {
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: Roboto, Shrikhand,"Arial Black", Arial, Verdana, sans-serif;
+  margin: 0 auto;
+}
+
+ul
+{
+  list-style-type: none;
+}
+
+span
+{
+  font-weight: bolder;
+}
+
+a:link
+{
+  text-decoration: none;
+}
+
+/*Page - Accueil*/
+
+/*Header*/
+
+#accueil_header
+{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#logo img
+{
+  height: 30px;
+}
+
+/*Section n°1*/
+
+#section_one
+{
+  background-color: #F6F6F6;
+  padding-bottom: 50px;
+}
+
+#position
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  background-color: #EAEAEA;
+  border-top: 5px solid lightgrey;
+  color: #333333;
+  font-weight: 500;
+}
+
+.fa-location-dot
+{
+  align-self: center;
+  color: #333333;
+}
+
+#reservation-text
+{
+  text-align: center;
+}
+
+#reservation-text p
+{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#reservation button
+{
+  display: block;
+  width: 220px;
+  margin: auto;
+  color: white;
+  background: linear-gradient(#FF79DA,#9356DC);
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 5px 5px lightgrey;
+}
+
+/*Section n°2*/
+
+#section_two
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+.section2_cards
+{
+  width: 300px;
+  height: 65px;
+  margin-bottom: 20px;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+}
+
+.section2_cards-inter
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+}
+
+#section_two .fa-mobile-screen-button, #section_two .fa-list, #section_two .fa-store
+{
+  color: grey;
+}
+
+#section_two .fa-1, #section_two .fa-2, #section_two .fa-3
+{
+  color: white;
+  background-color: #9356DC;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  padding-top: 8px;
+  padding-left: 10px;
+}
+
+
+
+/*Petit ajout pour régler en attendant, à retirer!!!!!!!!!!!!!!!!*/
+section img, footer img
+{
+  width: 200px;
+  height: 200px;
+}
