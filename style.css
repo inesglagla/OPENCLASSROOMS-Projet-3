@@ -1,5 +1,7 @@
 /*Configurations de départ*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -25,6 +27,16 @@ a:link
   text-decoration: none;
 }
 
+a:visited
+{
+  color: black;
+}
+
+footer a:visited
+{
+  color: white;
+}
+
 /*Page - Accueil*/
 
 /*Header*/
@@ -47,6 +59,7 @@ a:link
 {
   background-color: #F6F6F6;
   padding-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 #position
@@ -97,7 +110,13 @@ a:link
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 35px;
+  padding-bottom: 45px;
+}
+
+#section_two h2
+{
+  position: relative;
+  right: 60px;
 }
 
 .section2_cards
@@ -107,12 +126,12 @@ a:link
   margin-bottom: 20px;
   background-color: #F6F6F6;
   border-radius: 20px;
+  box-shadow: 5px 6px 5px lightgrey;
 }
 
 .section2_cards-inter
 {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 20px;
   font-weight: 500;
@@ -134,11 +153,111 @@ a:link
   padding-left: 10px;
 }
 
+/*Section n°3*/
 
-
-/*Petit ajout pour régler en attendant, à retirer!!!!!!!!!!!!!!!!*/
-section img, footer img
+#section_three
 {
-  width: 200px;
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding-top: 30px;
+}
+
+#section_three h2
+{
+  position: relative;
+  right: 85px;
+}
+
+.resto
+{
+  width: 300px;
+  height: 220px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px lightgrey;
+}
+
+.resto img
+{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+/*Section n°3 - Partie intérieure*/
+
+.resto h3, .resto h4
+{
+  margin: 12px 12px auto;
+  word-wrap: break-word;
+  line-height: 13px;
+  font-size: 15px;
+}
+
+.resto h3
+{
+  font-weight: 750;
+}
+
+.resto h4
+{
+  font-weight: 350;
+}
+
+#heart-palette
+{
+  position: absolute;
+  left: 1055px;
+  bottom: 30px;
+}
+
+#heart-note
+{
+  position: absolute;
+  left: 1055px;
+  bottom: -210px;
+}
+
+#heart-fr
+{
+  position: absolute;
+  left: 1055px;
+  bottom: -450px;
+}
+
+#heart-delice
+{
+  position: absolute;
+  left: 1055px;
+  bottom: -690px;
+}
+
+#hearteffect-palette, #hearteffect-note,
+#hearteffect-fr, #hearteffect-delice
+{
+  display: none;
+  position: absolute;
+  bottom: 2px;
+}
+
+/*Section n°3 - Nouveau*/
+
+.nouveau
+{
+  position: absolute;
+  right: 815px;
+  margin-top: 12px;
+  border-radius: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-shadow: 3px 3px 7px grey;
+  color : #00805E;
+  background-color: #99E2D0;
+  font-weight: 500;
+  font-size: 15px;
 }
