@@ -123,6 +123,7 @@ footer a:visited
 {
   width: 300px;
   height: 65px;
+  padding: 5px;
   margin-bottom: 20px;
   background-color: #F6F6F6;
   border-radius: 20px;
@@ -131,6 +132,8 @@ footer a:visited
 
 .section2_cards-inter
 {
+  position: relative;
+  right: 17px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -162,6 +165,7 @@ footer a:visited
   align-items: center;
   background-color: #F6F6F6;
   padding-top: 30px;
+  padding-bottom: 35spx;
 }
 
 #section_three h2
@@ -209,32 +213,12 @@ footer a:visited
   font-weight: 350;
 }
 
-#heart-palette
-{
-  position: absolute;
-  left: 1055px;
-  bottom: 30px;
-}
-
-#heart-note
-{
-  position: absolute;
-  left: 1055px;
-  bottom: -210px;
-}
-
-#heart-fr
-{
-  position: absolute;
-  left: 1055px;
-  bottom: -450px;
-}
-
+#heart-palette, #heart-note, #heart-fr,
 #heart-delice
 {
-  position: absolute;
-  left: 1055px;
-  bottom: -690px;
+  position: relative;
+  left: 250px;
+  bottom: 30px;
 }
 
 #hearteffect-palette, #hearteffect-note,
@@ -260,4 +244,27 @@ footer a:visited
   background-color: #99E2D0;
   font-weight: 500;
   font-size: 15px;
+}
+
+/*Footer*/
+
+footer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #353535;
+  color: white;
+  padding-top: 30px;
+}
+
+footer img
+{
+  width: 30%;
+  filter: brightness(100.0);
+}
+
+footer ul
+{
+  line-height: 30px;
 }
