@@ -215,9 +215,9 @@ footer a:visited
 #heart-palette, #heart-note, #heart-fr,
 #heart-delice
 {
-  position: absolute;
-  left: 310px;
-  bottom: -135px;
+  position: relative;
+  top: -35px;
+  padding-left:250px;
 }
 
 #heart-note
@@ -240,7 +240,7 @@ footer a:visited
 {
   display: none;
   position: absolute;
-  bottom: 2px;
+  bottom: 0px;
 }
 
 /*Section n°3 - Nouveau*/
