@@ -329,6 +329,11 @@ footer a
 
 /*Main*/
 
+main
+{
+  background-color:#F6F6F6;
+}
+
 #main_img img
 {
   width: 100%;
@@ -344,6 +349,8 @@ footer a
   bottom : 75px;
 }
 
+/*Main - Intérieur*/
+
 #menu_top
 {
   display: flex;
@@ -355,4 +362,74 @@ footer a
 {
   font-family: "shrikhand";
   font-weight: 400;
+}
+
+.menu
+{
+  width:95%;
+  margin:auto;
+  padding-bottom: 15px;
+}
+
+.menu h2
+{
+  width:11%;
+  font-size: 18px;
+  font-weight: 400;
+  padding-right:20px;
+  border-bottom:3px solid #99E2D0;
+  padding-bottom: 5px;
+}
+
+/*Main - Cartes*/
+
+.menu_cards
+{
+  height:80px;
+  background-color:white;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 5px 6px 20px -3px rgba(227,227,227,0.75);
+  -webkit-box-shadow: 5px 6px 20px -3px rgba(227,227,227,0.75);
+  -moz-box-shadow: 5px 6px 20px -3px rgba(227,227,227,0.75);
+}
+
+.menu_cards-elements
+{
+  width: 90%;
+  padding-top: 2px;
+  margin-left: 15px;
+  margin-right: 25px;
+  line-height: 10px;
+}
+
+.menu_cards-elements span
+{
+  position: relative;
+  bottom: 25px;
+  left: 325px;
+}
+
+/*Bouton pour l'animation des cartes*/
+
+.bouton_anim
+{
+  color:white;
+  display: none;
+}
+
+/*Main - Bouton*/
+
+#commander
+{
+  display: block;
+  position: relative;
+  top: 20px;
+  width: 195px;
+  margin: auto;
+  color: white;
+  background: linear-gradient(#FF79DA,#9356DC);
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 5px 5px lightgrey;
 }
