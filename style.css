@@ -76,6 +76,8 @@ footer a:visited
 
 .fa-location-dot
 {
+  position: relative;
+  bottom: 3px;
   align-self: center;
 }
 
@@ -299,6 +301,11 @@ footer a
   color:white
 }
 
+footer li .fa-utensils, footer li .fa-handshake-angle, footer li
+{
+  padding-right:10px;
+}
+
 /*Page - La palette du goût*/
 
 /*Header des sous-pages*/
@@ -338,6 +345,7 @@ main
 {
   width: 100%;
   height:295px;
+  object-fit: cover;
 }
 
 #menu_section
