@@ -223,37 +223,6 @@ footer a:visited
   font-weight: 350;
 }
 
-#heart-palette, #heart-note, #heart-fr,
-#heart-delice
-{
-  position: relative;
-  top: -35px;
-  padding-left:250px;
-}
-
-#heart-note
-{
-  bottom: -375px;
-}
-
-#heart-fr
-{
-  bottom: -615px;
-}
-
-#heart-delice
-{
-  bottom: -855px;
-}
-
-#hearteffect-palette, #hearteffect-note,
-#hearteffect-fr, #hearteffect-delice
-{
-  display: none;
-  position: absolute;
-  bottom: 0px;
-}
-
 /*Section n°3 - Nouveau*/
 
 .nouveau
@@ -466,3 +435,52 @@ main
 
 /*Boutons "J'aime"*/
 
+.heart
+{
+  position: relative;
+  top: -35px;
+  padding-left: 250px;
+}
+
+#heart-note
+{
+  bottom: -375px;
+}
+
+#heart-fr
+{
+  bottom: -615px;
+}
+
+#heart-delice
+{
+  bottom: -855px;
+}
+
+.hearteffect
+{
+  position: absolute;
+  bottom: 0px;
+  fill: url(#GradientHeart);
+  opacity: 0;
+  transform-origin: center 60%;
+  transform: scale(0);
+  transition: transform 0.2s linear, opacity 0.2s linear;
+}
+
+.heart:active {
+    
+    .hearteffect
+    {
+      opacity: 1;
+      transform: scale(1);
+      
+    }
+}
+
+.main-stop {
+  stop-color: #FF79DA;
+}
+.alt-stop {
+  stop-color: #9356DC;
+}
