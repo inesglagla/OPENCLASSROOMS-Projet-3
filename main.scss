@@ -544,3 +544,46 @@ main
 .alt-stop {
   stop-color: #9356DC;
 }
+
+/*Chargement des menus*/
+
+@keyframes menuapparition {
+
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-1
+{
+  opacity: 0;
+  animation: menuapparition 1s ease-in-out 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.slide-2
+{
+  opacity: 0;
+  animation: menuapparition 1s ease-in-out 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.slide-3
+{
+  opacity: 0;
+  animation: menuapparition 1s ease-in-out 0.75s;
+  animation-fill-mode: forwards;
+}
+
+.slide-4
+{
+  opacity: 0;
+  animation: menuapparition 1s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
