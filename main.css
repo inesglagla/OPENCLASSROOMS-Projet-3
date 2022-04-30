@@ -160,6 +160,7 @@ footer a:visited {
 }
 
 .resto {
+  position: relative;
   width: 300px;
   height: 220px;
   margin-bottom: 20px;
@@ -193,11 +194,11 @@ footer a:visited {
 }
 
 /*Section n°3 - Nouveau*/
-.nouveau {
+.resto p {
   position: absolute;
-  right: 75px;
+  right: 15px;
+  top: 10px;
   height: 32px;
-  margin-top: 12px;
   border-radius: 2px;
   padding-right: 15px;
   padding-left: 15px;
@@ -208,11 +209,8 @@ footer a:visited {
   box-shadow: 4px 4px 37px -14px #333333;
   -webkit-box-shadow: 4px 4px 37px -14px #333333;
   -moz-box-shadow: 4px 4px 37px -14px #333333;
-}
-
-.nouveau p {
-  position: relative;
-  top: -6px;
+  display: flex;
+  align-items: center;
 }
 
 /*Footer*/
@@ -251,11 +249,19 @@ footer li .fa-utensils, footer li .fa-handshake-angle, footer li {
   align-items: center;
   padding-bottom: 10px;
   padding-top: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+#menu_retour {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #menu_logo {
-  position: relative;
-  left: 80px;
+  width: 150px;
 }
 
 .fa-arrow-left {
@@ -287,14 +293,31 @@ main {
 
 /*Main - Intérieur*/
 #menu_top {
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+#menu_hearteffect {
+  position: absolute;
+  bottom: 23px;
+  fill: url(#GradientHeart);
+  opacity: 0;
+  transform-origin: center 60%;
+  transform: scale(0);
+  transition: transform 0.2s linear, opacity 0.2s linear;
+}
+
+#menu_heartALL:hover #menu_hearteffect {
+  opacity: 1;
+  transform: scale(1);
+}
+
 #menu_top h1 {
   font-family: "shrikhand";
   font-weight: 400;
+  font-size: 30px;
 }
 
 .menu {
@@ -304,12 +327,18 @@ main {
 }
 
 .menu h2 {
-  width: 11%;
   font-size: 18px;
   font-weight: 400;
   padding-right: 20px;
-  border-bottom: 3px solid #99E2D0;
   padding-bottom: 5px;
+}
+
+.menu h2:after {
+  content: "";
+  width: 45px;
+  height: 3px;
+  background: #99E2D0;
+  display: block;
 }
 
 /*Main - Cartes*/
@@ -321,27 +350,56 @@ main {
   box-shadow: 5px 6px 20px -3px rgba(227, 227, 227, 0.75);
   -webkit-box-shadow: 5px 6px 20px -3px rgba(227, 227, 227, 0.75);
   -moz-box-shadow: 5px 6px 20px -3px rgba(227, 227, 227, 0.75);
+  overflow: hidden;
 }
 
 .menu_cards-elements {
-  width: 90%;
-  padding-top: 2px;
-  margin-left: 15px;
-  margin-right: 25px;
-  line-height: 10px;
+  margin-top: 15px;
+  margin-left: 10px;
 }
 
 .menu_cards-elements span {
-  position: relative;
-  bottom: 25px;
-  left: 325px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: 0.5s ease;
+  padding-right: 45px;
+  margin-top: -25px;
+}
+
+.menu_cards-elements p, .menu_cards-elements h3 {
+  margin: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
 }
 
 /*Bouton pour l'animation des cartes*/
 .bouton_anim {
-  display: none;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  opacity: 0;
+  width: 70px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #99E2D0;
   color: white;
+  transform: translateX(100%);
 }
+
+.fa-circle-check {
+  font-size: 25px;
+}
+
+/*
+
+opacity: 0;
 
 /*Main - Bouton*/
 #commander {
@@ -449,7 +507,7 @@ main {
   transition: transform 0.2s linear, opacity 0.2s linear;
 }
 
-.heart:active .hearteffect {
+.heart:hover .hearteffect {
   opacity: 1;
   transform: scale(1);
 }
@@ -496,4 +554,28 @@ main {
   opacity: 0;
   animation: menuapparition 1s ease-in-out 1s;
   animation-fill-mode: forwards;
+}
+
+/*Sélection d'un plat*/
+.menu_cards:hover .bouton_anim {
+  opacity: 1;
+  transition: 0.5s ease;
+  transform: translateX(0%);
+}
+
+.menu_cards:hover .fa-circle-check {
+  animation: circlecheck 650ms forwards;
+}
+
+.menu_cards:hover span {
+  padding-right: 110px;
+}
+
+@keyframes circlecheck {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
