@@ -14,10 +14,6 @@ ul {
   list-style-type: none;
 }
 
-span {
-  font-weight: bolder;
-}
-
 a:link {
   text-decoration: none;
 }
@@ -343,36 +339,40 @@ main {
 
 /*Main - Cartes*/
 .menu_cards {
-  height: 80px;
+  display: flex;
+  max-width: 100%;
   background-color: white;
   border-radius: 20px;
-  margin-bottom: 15px;
+  margin: 1rem 0;
+  padding: 1rem;
   box-shadow: 5px 6px 20px -3px rgba(227, 227, 227, 0.75);
   -webkit-box-shadow: 5px 6px 20px -3px rgba(227, 227, 227, 0.75);
   -moz-box-shadow: 5px 6px 20px -3px rgba(227, 227, 227, 0.75);
   overflow: hidden;
 }
 
-.menu_cards-elements {
-  margin-top: 15px;
-  margin-left: 10px;
+.menu_cards .menu_cards-elements {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
 }
 
-.menu_cards-elements span {
+.menu_cards .menu_cards-elements p, .menu_cards .menu_cards-elements h3 {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu_cards .price {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  padding-left: 10px;
   transition: 0.5s ease;
-  padding-right: 45px;
-  margin-top: -25px;
-}
-
-.menu_cards-elements p, .menu_cards-elements h3 {
-  margin: 5px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 200px;
-  overflow: hidden;
+  font-weight: 700;
 }
 
 /*Bouton pour l'animation des cartes*/
@@ -391,6 +391,7 @@ main {
   background-color: #99E2D0;
   color: white;
   transform: translateX(100%);
+  transition-duration: 650ms;
 }
 
 .fa-circle-check {
@@ -567,8 +568,8 @@ opacity: 0;
   animation: circlecheck 650ms forwards;
 }
 
-.menu_cards:hover span {
-  padding-right: 110px;
+.menu_cards:hover .price {
+  padding-right: 75px;
 }
 
 @keyframes circlecheck {
