@@ -31,11 +31,11 @@ footer a:visited {
 #accueil_header {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 30px;
 }
 
-#logo img {
-  height: 30px;
+#accueil_header #logo img {
+  height: 80px;
 }
 
 /*Section n°1*/
@@ -45,7 +45,7 @@ footer a:visited {
   margin-bottom: 25px;
 }
 
-#position {
+#section_one #position {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -57,18 +57,22 @@ footer a:visited {
   -moz-box-shadow: 1px 10px 5px -8px rgba(87, 87, 87, 0.56) inset;
 }
 
-.fa-location-dot {
+#section_one #position .fa-location-dot {
   position: relative;
   bottom: 3px;
   align-self: center;
 }
 
-#reservation-text {
+#section_one #reservation-text {
   text-align: center;
 }
 
-#reservation-text p {
-  font-size: 18px;
+#section_one #reservation-text h2 {
+  font-size: 30px;
+}
+
+#section_one #reservation-text p {
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -87,18 +91,21 @@ footer a:visited {
 /*Section n°2*/
 #section_two {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
   padding-bottom: 45px;
 }
 
 #section_two h2 {
   position: relative;
-  right: 60px;
+  right: 0px;
+  font-size: 30px;
 }
 
-.section2_cards {
-  width: 300px;
+#section_two .section2_cards {
+  width: 400px;
   height: 65px;
   padding: 5px;
   margin-bottom: 20px;
@@ -108,7 +115,7 @@ footer a:visited {
   transition: 650ms;
 }
 
-.section2_cards .section2_cards-inter {
+#section_two .section2_cards .section2_cards-inter {
   position: relative;
   right: 17px;
   display: flex;
@@ -117,16 +124,16 @@ footer a:visited {
   font-weight: 500;
 }
 
-.section2_cards .fa-mobile-screen-button, .section2_cards .fa-list, .section2_cards .fa-store {
+#section_two .section2_cards .fa-mobile-screen-button, #section_two .section2_cards .fa-list, #section_two .section2_cards .fa-store {
   color: grey;
   transition: 650ms;
 }
 
-.section2_cards:hover {
+#section_two .section2_cards:hover {
   background-color: #F5EDFF;
 }
 
-.section2_cards:hover .fa-mobile-screen-button, .section2_cards:hover .fa-list, .section2_cards:hover .fa-store {
+#section_two .section2_cards:hover .fa-mobile-screen-button, #section_two .section2_cards:hover .fa-list, #section_two .section2_cards:hover .fa-store {
   color: #9356DC;
 }
 
@@ -143,22 +150,32 @@ footer a:visited {
 /*Section n°3*/
 #section_three {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 80px;
   background-color: #F6F6F6;
   padding-top: 30px;
   padding-bottom: 40px;
 }
 
 #section_three h2 {
+  width: 100%;
   position: relative;
-  right: 85px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 30px;
 }
 
-.resto {
+#section_three .resto {
   position: relative;
-  width: 300px;
-  height: 220px;
+  width: 750px;
+  height: 420px;
   margin-bottom: 20px;
   background-color: white;
   border-radius: 20px;
@@ -170,7 +187,7 @@ footer a:visited {
   border-top-right-radius: 20px;
   object-fit: cover;
   width: 100%;
-  height: 150px;
+  height: 350px;
 }
 
 /*Section n°3 - Partie intérieure*/
@@ -178,7 +195,7 @@ footer a:visited {
   margin: 12px 12px auto;
   word-wrap: break-word;
   line-height: 13px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .resto h3 {
@@ -201,7 +218,7 @@ footer a:visited {
   color: #00805E;
   background-color: #99E2D0;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
   box-shadow: 4px 4px 37px -14px #333333;
   -webkit-box-shadow: 4px 4px 37px -14px #333333;
   -moz-box-shadow: 4px 4px 37px -14px #333333;
@@ -230,12 +247,12 @@ footer ul {
   line-height: 30px;
 }
 
-footer a {
-  color: white;
-}
-
 footer li .fa-utensils, footer li .fa-handshake-angle, footer li {
   padding-right: 10px;
+}
+
+footer a {
+  color: white;
 }
 
 /*Page - La palette du goût*/
@@ -249,22 +266,22 @@ footer li .fa-utensils, footer li .fa-handshake-angle, footer li {
   position: relative;
 }
 
-#menu_retour {
+#menu_header #menu_retour {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
 }
 
-#menu_logo {
-  width: 150px;
-}
-
-.fa-arrow-left {
+#menu_header #menu_retour .fa-arrow-left {
   padding-left: 20px;
 }
 
-#menu_logo img {
+#menu_header #menu_logo {
+  width: 150px;
+}
+
+#menu_header #menu_logo #menu_logo img {
   width: 160px;
 }
 
@@ -273,18 +290,28 @@ main {
   background-color: #F6F6F6;
 }
 
-#main_img img {
+main #main_img img {
   width: 100%;
   height: 295px;
   object-fit: cover;
 }
 
-#menu_section {
+main #menu_section {
+  margin: auto;
+  width: 60%;
   background-color: #F6F6F6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   position: relative;
   bottom: 75px;
+}
+
+#menu_complets {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
 }
 
 /*Main - Intérieur*/
@@ -295,7 +322,7 @@ main {
   align-items: center;
 }
 
-#menu_hearteffect {
+#menu_top #menu_hearteffect {
   position: absolute;
   bottom: 23px;
   fill: url(#GradientHeart);
@@ -317,7 +344,7 @@ main {
 }
 
 .menu {
-  width: 95%;
+  width: 40%;
   margin: auto;
   padding-bottom: 15px;
 }
@@ -397,10 +424,6 @@ main {
 .fa-circle-check {
   font-size: 25px;
 }
-
-/*
-
-opacity: 0;
 
 /*Main - Bouton*/
 #commander {
@@ -483,7 +506,7 @@ opacity: 0;
 .heart {
   position: relative;
   top: -35px;
-  padding-left: 250px;
+  padding-left: 650px;
 }
 
 #heart-note {
@@ -578,5 +601,100 @@ opacity: 0;
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/*Versions du site*/
+/*Tablette*/
+@media screen and (max-width: 768px) {
+  /*Page principale*/
+  #section_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding-bottom: 45px;
+  }
+  #section_two .section2_cards {
+    width: 300px;
+  }
+  #section_three .resto {
+    width: 300px;
+    height: 220px;
+  }
+  .resto img {
+    width: 100%;
+    height: 150px;
+  }
+  .resto h3, .resto h4 {
+    line-height: 13px;
+    font-size: 15px;
+  }
+  .resto p {
+    font-size: 15px;
+  }
+  .heart {
+    position: relative;
+    top: -35px;
+    padding-left: 250px;
+  }
+  /*Sous-pages*/
+  main #menu_section {
+    width: 80%;
+  }
+  #menu_complets {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .menu {
+    width: 90%;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px) {
+  /*Page principale*/
+  #accueil_header {
+    padding: 10px;
+  }
+  #accueil_header #logo img {
+    height: 30px;
+  }
+  #reservation-text {
+    text-align: center;
+  }
+  #reservation-text h2 {
+    font-size: 20px;
+  }
+  #reservation-text p {
+    font-size: 18px;
+  }
+  #section_two h2 {
+    right: 60px;
+    font-size: 1.5em;
+  }
+  #section_three {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 0px;
+    column-gap: 0px;
+  }
+  #section_three h2 {
+    position: relative;
+    right: 85px;
+    font-size: 1.5em;
+  }
+  /*Sous-pages*/
+  main #menu_section {
+    width: 100%;
+  }
+  #menu_complets {
+    padding: 10px;
+  }
+  .menu {
+    width: 93%;
   }
 }

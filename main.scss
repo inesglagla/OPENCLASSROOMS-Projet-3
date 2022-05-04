@@ -2,7 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 
-* {
+* 
+{
   box-sizing: border-box;
 }
 
@@ -32,6 +33,7 @@ footer a:visited
   color: white;
 }
 
+
 /*Page - Accueil*/
 
 /*Header*/
@@ -40,12 +42,11 @@ footer a:visited
 {
   display: flex;
   justify-content: center;
-  padding: 10px;
-}
-
-#logo img
-{
-  height: 30px;
+  padding: 30px;
+  #logo img
+  {
+    height: 80px;
+  }
 }
 
 /*Section n°1*/
@@ -55,36 +56,37 @@ footer a:visited
   background-color: #F6F6F6;
   padding-bottom: 50px;
   margin-bottom: 25px;
-}
-
-#position
-{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  gap: 20px;
-  background-color: #EAEAEA;
-  font-weight: 500;
-  box-shadow: 1px 10px 5px -8px rgba(87, 87, 87, 0.56) inset;
-  -webkit-box-shadow: 1px 10px 5px -8px rgba(87, 87, 87, 0.56) inset;
-  -moz-box-shadow: 1px 10px 5px -8px rgba(87, 87, 87, 0.56) inset;}
-
-.fa-location-dot
-{
-  position: relative;
-  bottom: 3px;
-  align-self: center;
-}
-
-#reservation-text
-{
-  text-align: center;
-}
-
-#reservation-text p
-{
-  font-size: 18px;
-  font-weight: 300;
+  #position
+  {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    background-color: #EAEAEA;
+    font-weight: 500;
+    box-shadow: 1px 10px 5px -8px rgba(87, 87, 87, 0.56) inset;
+    -webkit-box-shadow: 1px 10px 5px -8px rgba(87, 87, 87, 0.56) inset;
+    -moz-box-shadow: 1px 10px 5px -8px rgba(87, 87, 87, 0.56) inset;
+    .fa-location-dot
+    {
+    position: relative;
+    bottom: 3px;
+    align-self: center;
+    }
+  }
+  #reservation-text
+  {
+    text-align: center;
+    h2
+    {
+      font-size: 30px;
+    }
+    p
+    {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
 }
 
 #explorer
@@ -105,48 +107,50 @@ footer a:visited
 #section_two
 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
   padding-bottom: 45px;
-}
-
-#section_two h2
-{
-  position: relative;
-  right: 60px;
-}
-
-.section2_cards
-{
-  width: 300px;
-  height: 65px;
-  padding: 5px;
-  margin-bottom: 20px;
-  background-color: #F6F6F6;
-  border-radius: 20px;
-  box-shadow: 5px 6px 5px lightgrey;
-  transition: 650ms;
-  .section2_cards-inter
+  h2
   {
     position: relative;
-    right: 17px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-weight: 500;
+    right: 0px;
+    font-size: 30px;
   }
-    .fa-mobile-screen-button, .fa-list, .fa-store
+  .section2_cards
+  {
+    width: 400px;
+    height: 65px;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    box-shadow: 5px 6px 5px lightgrey;
+    transition: 650ms;
+    .section2_cards-inter
     {
-      color: grey;
-      transition: 650ms;
+      position: relative;
+      right: 17px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-weight: 500;
     }
-    &:hover{
-        background-color: #F5EDFF;
-        .fa-mobile-screen-button, .fa-list, .fa-store
-        {
-            color: #9356DC;
-        }
+      .fa-mobile-screen-button, .fa-list, .fa-store
+      {
+        color: grey;
+        transition: 650ms;
+      }
+      &:hover
+      {
+      background-color: #F5EDFF;
+      .fa-mobile-screen-button, .fa-list, .fa-store
+      {
+        color: #9356DC;
+      }
     }
+  }
 }
 
 #section_two
@@ -163,34 +167,41 @@ footer a:visited
   }
 }
 
-
 /*Section n°3*/
 
 #section_three
 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 80px;
   background-color: #F6F6F6;
   padding-top: 30px;
   padding-bottom: 40px;
-}
-
-#section_three h2
-{
-  position: relative;
-  right: 85px;
-}
-
-.resto
-{
-  position: relative;
-  width: 300px;
-  height: 220px;
-  margin-bottom: 20px;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 3px 3px 10px lightgrey;
+  h2
+  {
+    width: 100%;
+    position: relative;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 30px;
+  }
+  .resto
+  {
+    position: relative;
+    width: 750px;
+    height: 420px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px lightgrey;
+  }
 }
 
 .resto img
@@ -199,8 +210,9 @@ footer a:visited
   border-top-right-radius: 20px;
   object-fit: cover;
   width: 100%;
-  height: 150px;
+  height: 350px;
 }
+
 
 /*Section n°3 - Partie intérieure*/
 
@@ -209,7 +221,7 @@ footer a:visited
   margin: 12px 12px auto;
   word-wrap: break-word;
   line-height: 13px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .resto h3
@@ -228,7 +240,7 @@ footer a:visited
 {
   position: absolute;
   right: 15px;
-  top:10px;
+  top: 10px;
   height: 32px;
   border-radius: 2px;
   padding-right: 15px;
@@ -236,7 +248,7 @@ footer a:visited
   color: #00805E;
   background-color: #99E2D0;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
   box-shadow: 4px 4px 37px -14px #333333;
   -webkit-box-shadow: 4px 4px 37px -14px #333333;
   -moz-box-shadow: 4px 4px 37px -14px #333333;
@@ -269,14 +281,14 @@ footer ul
   line-height: 30px;
 }
 
-footer a
-{
-  color:white
-}
-
 footer li .fa-utensils, footer li .fa-handshake-angle, footer li
 {
   padding-right:10px;
+}
+
+footer a
+{
+  color:white
 }
 
 /*Page - La palette du goût*/
@@ -285,34 +297,31 @@ footer li .fa-utensils, footer li .fa-handshake-angle, footer li
 
 #menu_header
 {
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    justify-content: center;
-    position: relative;
-}
-
-#menu_retour{
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#menu_logo 
-{
-  width: 150px;
-}
-
-.fa-arrow-left
-{
-  padding-left: 20px;
-}
-
-#menu_logo img
-{
-  width:160px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  justify-content: center;
+  position: relative;
+  #menu_retour
+  {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    .fa-arrow-left
+    {
+      padding-left: 20px;
+    }
+  }
+  #menu_logo 
+  {
+    width: 150px;
+    #menu_logo img
+    {
+      width:160px;
+    }
+  }
 }
 
 /*Main*/
@@ -320,22 +329,31 @@ footer li .fa-utensils, footer li .fa-handshake-angle, footer li
 main
 {
   background-color:#F6F6F6;
+  #main_img img
+  {
+    width: 100%;
+    height:295px;
+    object-fit: cover;
+  }
+  #menu_section
+  {
+    margin: auto;
+    width: 60%;
+    background-color:#F6F6F6;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: relative;
+    bottom : 75px;
+  }
 }
 
-#main_img img
+#menu_complets
 {
-  width: 100%;
-  height:295px;
-  object-fit: cover;
-}
-
-#menu_section
-{
-  background-color:#F6F6F6;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  position: relative;
-  bottom : 75px;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
 }
 
 /*Main - Intérieur*/
@@ -346,17 +364,16 @@ main
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-#menu_hearteffect
-{
-  position: absolute;
-  bottom: 23px;
-  fill: url(#GradientHeart);
-  opacity: 0;
-  transform-origin: center 60%;
-  transform: scale(0);
-  transition: transform 0.2s linear, opacity 0.2s linear;
+  #menu_hearteffect
+  {
+    position: absolute;
+    bottom: 23px;
+    fill: url(#GradientHeart);
+    opacity: 0;
+    transform-origin: center 60%;
+    transform: scale(0);
+    transition: transform 0.2s linear, opacity 0.2s linear;
+  }
 }
 
 #menu_heartALL:hover
@@ -377,7 +394,7 @@ main
 
 .menu
 {
-  width:95%;  
+  width: 40%;  
   margin:auto;
   padding-bottom: 15px;
 }
@@ -444,7 +461,7 @@ main
 {
   position: absolute;
   right: 0px;
-  top:0px;
+  top:  0px;
   opacity: 0;
   width: 70px;
   height:80px;
@@ -463,10 +480,6 @@ main
 {
   font-size: 25px;
 }
-
-/*
-
-opacity: 0;
 
 /*Main - Bouton*/
 
@@ -563,7 +576,7 @@ opacity: 0;
 {
   position: relative;
   top: -35px;
-  padding-left: 250px;
+  padding-left: 650px;
 }
 
 #heart-note
@@ -683,4 +696,145 @@ opacity: 0;
   }
 }
 
+/*Versions du site*/
 
+/*Tablette*/
+@media screen and (max-width: 768px)
+{
+  /*Page principale*/
+
+  #section_two
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding-bottom: 45px;
+    .section2_cards
+    {
+      width: 300px;
+    }
+  }
+
+  #section_three
+  {
+    .resto
+    {
+      width: 300px;
+      height: 220px;
+    }
+  }
+  
+  .resto img
+  {
+  width: 100%;
+  height: 150px;
+  }
+
+  .resto h3, .resto h4
+  {
+    line-height: 13px;
+    font-size: 15px;
+  }
+
+  .resto p
+  {
+    font-size: 15px;
+  }
+
+  .heart
+  {
+    position: relative;
+    top: -35px;
+    padding-left: 250px;
+  }
+
+    /*Sous-pages*/
+
+  main #menu_section
+  {
+    width: 80%;
+  }
+
+  #menu_complets
+  {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .menu
+  {
+    width: 90%;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 425px)
+{
+  /*Page principale*/
+
+  #accueil_header
+  {
+    padding: 10px;
+    #logo img
+    {
+      height: 30px;
+    }
+  }
+
+  #reservation-text
+  {
+    text-align: center;
+    h2
+    {
+      font-size: 20px;
+    }
+    p
+    {
+      font-size: 18px;
+    }
+  }
+
+  #section_two
+  {
+    h2
+    {
+      right: 60px;
+      font-size: 1.5em;
+    }
+  }
+
+  #section_three
+  {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 0px;
+    column-gap: 0px;
+    h2
+    {
+      position: relative;
+      right: 85px;
+      font-size: 1.5em;
+    }
+  }
+
+  /*Sous-pages*/
+
+  main #menu_section
+  {
+    width: 100%;
+  }
+
+  #menu_complets
+  {
+    padding: 10px;
+  }
+
+  .menu
+  {
+    width: 93%;
+  }
+}
