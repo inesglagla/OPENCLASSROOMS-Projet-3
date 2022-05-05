@@ -88,6 +88,14 @@ footer a:visited {
   transition: 650ms;
 }
 
+#explorer span {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 /*Section n°2*/
 #section_two {
   display: flex;
@@ -117,11 +125,16 @@ footer a:visited {
 
 #section_two .section2_cards .section2_cards-inter {
   position: relative;
-  right: 17px;
+  right: 55px;
+  bottom: 12px;
   display: flex;
   align-items: center;
   gap: 20px;
   font-weight: 500;
+}
+
+#section_two .section2_cards .section2_cards-inter p {
+  width: 200px;
 }
 
 #section_two .section2_cards .fa-mobile-screen-button, #section_two .section2_cards .fa-list, #section_two .section2_cards .fa-store {
@@ -318,7 +331,8 @@ main #menu_section {
 #menu_top {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
 }
 
@@ -440,6 +454,14 @@ main #menu_section {
   transition: 650ms;
 }
 
+#commander span {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 /*Animations*/
 /*Ecran de chargement*/
 .loader {
@@ -524,7 +546,7 @@ main #menu_section {
 .hearteffect {
   position: absolute;
   bottom: 0px;
-  fill: url(#GradientHeart);
+  fill: url(#GradientHeart-0);
   opacity: 0;
   transform-origin: center 60%;
   transform: scale(0);
@@ -619,6 +641,12 @@ main #menu_section {
   #section_two .section2_cards {
     width: 300px;
   }
+  #section_two .section2_cards .section2_cards-inter {
+    right: 55px;
+  }
+  #section_two .section2_cards .section2_cards-inter p {
+    width: 200px;
+  }
   #section_three .resto {
     width: 300px;
     height: 220px;
@@ -651,6 +679,10 @@ main #menu_section {
   }
   .menu {
     width: 90%;
+  }
+  #menu_top {
+    justify-content: space-around;
+    gap: 0px;
   }
 }
 

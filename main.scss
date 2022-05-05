@@ -100,6 +100,14 @@ footer a:visited
   border: none;
   box-shadow: 0px 5px 5px lightgrey;
   transition: 650ms;
+  span
+  {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
 }
 
 /*Section n°2*/
@@ -131,11 +139,16 @@ footer a:visited
     .section2_cards-inter
     {
       position: relative;
-      right: 17px;
+      right: 55px;
+      bottom: 12px;
       display: flex;
       align-items: center;
       gap: 20px;
       font-weight: 500;
+      p
+      {
+        width: 200px;
+      }
     }
       .fa-mobile-screen-button, .fa-list, .fa-store
       {
@@ -362,7 +375,8 @@ main
 {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
   #menu_hearteffect
   {
@@ -496,6 +510,14 @@ main
   border: none;
   box-shadow: 0px 5px 5px lightgrey;
   transition: 650ms;
+  span
+  {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
 }
 
 /*Animations*/
@@ -598,7 +620,7 @@ main
 {
   position: absolute;
   bottom: 0px;
-  fill: url(#GradientHeart);
+  fill: url(#GradientHeart-0);
   opacity: 0;
   transform-origin: center 60%;
   transform: scale(0);
@@ -714,6 +736,14 @@ main
     .section2_cards
     {
       width: 300px;
+      .section2_cards-inter
+      {
+        right: 55px;
+        p
+        {
+          width: 200px;
+        }
+      }
     }
   }
 
@@ -768,6 +798,12 @@ main
   .menu
   {
     width: 90%;
+  }
+
+  #menu_top
+  {
+    justify-content: space-around;
+    gap: 0px;
   }
 }
 
