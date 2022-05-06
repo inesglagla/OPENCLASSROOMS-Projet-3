@@ -341,7 +341,7 @@ main #menu_section {
 
 #menu_top #menu_hearteffect {
   position: absolute;
-  bottom: 23px;
+  bottom: 33px;
   fill: url(#GradientHeart);
   opacity: 0;
   transform-origin: center 60%;
