@@ -18,7 +18,7 @@ a:link {
   text-decoration: none;
 }
 
-a:visited {
+a:visited, a {
   color: black;
 }
 
@@ -63,15 +63,15 @@ footer a:visited {
   align-self: center;
 }
 
-#section_one #reservation-text {
+#reservation-text {
   text-align: center;
 }
 
-#section_one #reservation-text h2 {
+#reservation-text h1 {
   font-size: 30px;
 }
 
-#section_one #reservation-text p {
+#reservation-text p {
   font-size: 20px;
   font-weight: 300;
 }
@@ -243,20 +243,23 @@ footer a:visited {
 footer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   background-color: #353535;
   color: white;
   padding-top: 30px;
 }
 
 footer img {
-  position: relative;
-  left: 40px;
-  width: 120px;
+  display: flex;
+  padding-left: 40px;
+  width: 150px;
   filter: brightness(100);
 }
 
 footer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
   line-height: 30px;
 }
 
@@ -311,7 +314,7 @@ main #main_img img {
 
 main #menu_section {
   margin: auto;
-  width: 60%;
+  width: 80%;
   background-color: #F6F6F6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -324,7 +327,7 @@ main #menu_section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 100px;
+  gap: 30px;
 }
 
 /*Main - Intérieur*/
@@ -381,7 +384,7 @@ main #menu_section {
 /*Main - Cartes*/
 .menu_cards {
   display: flex;
-  max-width: 100%;
+  max-width: 400px;
   background-color: white;
   border-radius: 20px;
   margin: 1rem 0;
@@ -526,9 +529,9 @@ main #menu_section {
 
 /*Boutons "J'aime"*/
 .heart {
-  position: relative;
-  top: -35px;
-  padding-left: 650px;
+  position: absolute;
+  bottom: 25px;
+  right: 4%;
 }
 
 #heart-note {
@@ -663,9 +666,17 @@ main #menu_section {
     font-size: 15px;
   }
   .heart {
-    position: relative;
-    top: -35px;
-    padding-left: 250px;
+    right: 8%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer ul {
+    flex-direction: column;
+    gap: 0px;
+    line-height: 30px;
   }
   /*Sous-pages*/
   main #menu_section {
@@ -684,6 +695,9 @@ main #menu_section {
     justify-content: space-around;
     gap: 0px;
   }
+  .menu_cards {
+    max-width: 550px;
+  }
 }
 
 /*Mobile*/
@@ -698,8 +712,8 @@ main #menu_section {
   #reservation-text {
     text-align: center;
   }
-  #reservation-text h2 {
-    font-size: 20px;
+  #reservation-text h1 {
+    font-size: 25px;
   }
   #reservation-text p {
     font-size: 18px;
@@ -728,5 +742,8 @@ main #menu_section {
   }
   .menu {
     width: 93%;
+  }
+  .menu_cards {
+    max-width: 500px;
   }
 }
