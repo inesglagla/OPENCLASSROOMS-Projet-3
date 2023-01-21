@@ -99,10 +99,10 @@ footer a:visited {
 /*Section n°2*/
 #section_two {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   padding-bottom: 45px;
 }
 
@@ -151,6 +151,7 @@ footer a:visited {
 }
 
 #section_two .fa-1, #section_two .fa-2, #section_two .fa-3 {
+  display: block;
   color: white;
   background-color: #9356DC;
   border-radius: 100%;
@@ -163,7 +164,7 @@ footer a:visited {
 /*Section n°3*/
 #section_three {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -650,6 +651,10 @@ main #menu_section {
   #section_two .section2_cards .section2_cards-inter p {
     width: 200px;
   }
+  #section_three {
+    display: flex;
+    flex-direction: row;
+  }
   #section_three .resto {
     width: 300px;
     height: 220px;
@@ -721,6 +726,9 @@ main #menu_section {
   #section_two h2 {
     right: 60px;
     font-size: 1.5em;
+  }
+  #section_two .section2_cards {
+    min-width: 270px;
   }
   #section_three {
     flex-direction: column;

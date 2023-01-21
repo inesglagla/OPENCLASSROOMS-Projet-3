@@ -116,10 +116,10 @@ footer a:visited
 #section_two
 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   padding-bottom: 45px;
   h2
   {
@@ -171,6 +171,7 @@ footer a:visited
 {
   .fa-1, .fa-2, .fa-3
   {
+    display: block;
     color: white;
     background-color: #9356DC;
     border-radius: 100%;
@@ -186,7 +187,7 @@ footer a:visited
 #section_three
 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -753,6 +754,8 @@ main
 
   #section_three
   {
+    display:flex;
+    flex-direction: row;
     .resto
     {
       width: 300px;
@@ -862,6 +865,10 @@ main
     {
       right: 60px;
       font-size: 1.5em;
+    }
+    .section2_cards
+    {
+      min-width: 270px;
     }
   }
 
